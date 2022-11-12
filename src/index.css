@@ -14,37 +14,56 @@
   box-sizing: border-box;
 }
 
-body {
+body::before {
+  content:'';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   font-family: 'Manrope', sans-serif;
-  background-color: hsl(218, 23%, 16%);
+  background: url('./images/train.png') no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 0.1px);
+  /* height: calc(100vh - 0.1px); */
+  /* height: 80vh; */
   padding: 2.5rem;
+  opacity: 0.5;
 }
 
 .container {
   text-align: center;
   padding: 2.5rem;
-  background-color: hsl(217, 19%, 24%);
+  /* background-color: hsl(217, 19%, 24%); */
+  background-color: rgb(67, 59, 59);
   position: relative;
   border-radius: 1rem;
   line-height: 2rem;
+  margin:12rem auto;
 }
-
 .container h4 {
   letter-spacing: 0.3rem;
-  color: hsl(150, 100%, 66%);
+  color: rgb(246, 156, 186);
   font-size: 10px;
   text-transform: uppercase;
   margin-bottom: 1.2rem;
+  position: relative;
+}
+
+.cat{
+  width: 5rem;
+  position: absolute;
+  top: 9rem;
+  z-index: 1;
+  right:28rem ;
 }
 
 .container p {
   font-weight: 800;
   font-size: 28px;
   color: hsl(193, 38%, 86%);
+
 }
 
 .buttonArea {
@@ -59,7 +78,8 @@ body {
 }
 
 .palybtn {
-  background-color: hsl(150, 100%, 66%);
+  background-color: rgb(87, 55, 55);
+  border: 1px solid white;
   width: 3.6rem;
   height: 3.6rem;
   border-radius: 50%;
