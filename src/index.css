@@ -35,7 +35,6 @@ body::before {
 .container {
   text-align: center;
   padding: 2.5rem;
-  /* background-color: hsl(217, 19%, 24%); */
   background-color: rgb(67, 59, 59);
   position: relative;
   border-radius: 1rem;
@@ -48,7 +47,7 @@ body::before {
   font-size: 10px;
   text-transform: uppercase;
   margin-bottom: 1.2rem;
-  position: relative;
+
 }
 
 .cat{
@@ -90,7 +89,7 @@ body::before {
 }
 
 .palybtn:hover {
-  box-shadow: 0px 0px 25px hsl(148, 70%, 73%);
+  box-shadow: 0px 0px 26px hsl(148, 70%, 73%);
 }
 
 .palybtn img {
@@ -111,6 +110,9 @@ body::before {
   #divider {
     width: 20rem;
   }
+  .cat{
+    display: none;
+  }
 }
 
 @media (max-width:280px) {
@@ -123,8 +125,3 @@ body::before {
   }
 }
 
-@media (max-width:912px)and (min-width:600px) {
-  .container {
-    margin: -28rem auto;
-  }
-}
